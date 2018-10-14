@@ -1,5 +1,7 @@
 {
   "name": "MOHRApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

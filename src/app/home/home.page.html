@@ -1,10 +1,56 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Payments</ion-title>
+    <!-- <ion-select interface="alert" [interfaceOptions]="customAlertOptions" align="right">
+      <ion-select-option selected="true">2018</ion-select-option>
+      <ion-select-option>2017</ion-select-option>
+    </ion-select> -->
+    <ion-buttons slot="end">
+      <ion-button color="light" (click)="presentAlertRadio()">2018<ion-icon name="arrow-dropdown" slot="end"></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+<ion-content>
+  <ion-card>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label>
+          <h3>Total Paid</h3>
+          <ion-card-title>RM 7,500</ion-card-title>
+          <ion-text>
+            <p>as of 20 Jan 2018</p>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-list>
+    <ion-list-header>Payment History</ion-list-header>
+    <ion-item>
+      <ion-label text-wrap position="fixed">
+        <ion-text>12 Aug 2018</ion-text>
+      </ion-label>
+      <ion-note slot="end">RM2,000</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap position="fixed">
+        <ion-text>11 Jul 2018</ion-text>
+      </ion-label>
+      <ion-note slot="end">RM3,700</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap position="fixed">
+        <ion-text>14 Jun 2018</ion-text>
+      </ion-label>
+      <ion-note slot="end">RM4,100</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label text-wrap position="fixed">
+        <ion-text>9 May 2018</ion-text>
+      </ion-label>
+      <ion-note slot="end">RM1,800</ion-note>
+    </ion-item>
+  </ion-list>
+
 </ion-content>

@@ -1,7 +1,64 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>About</ion-title>
+    <ion-title>Claims</ion-title>
+    <!-- <ion-select interface="alert" [interfaceOptions]="customAlertOptions" align="right">
+      <ion-select-option selected="true">2018</ion-select-option>
+      <ion-select-option>2017</ion-select-option>
+    </ion-select> -->
+    <ion-buttons slot="end">
+        <ion-button color="light" (click)="presentAlertRadio()">2018<ion-icon name="arrow-dropdown" slot="end"></ion-icon></ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-card>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label>
+          <h3>Total Claim</h3>
+          <ion-card-title>RM 5,300</ion-card-title>
+          <ion-text>
+            <p>as of 19 Jan 2018</p>
+          </ion-text>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-list>
+    <ion-list-header>Claim History</ion-list-header>
+    <ion-item>
+      <ion-icon name="timer" slot="start"></ion-icon>
+      <ion-label>
+        <h2>17 Sep 2018</h2>
+        <h4>RM40</h4>
+        <p>Overtime</p>
+      </ion-label>
+      <div item-content slot="end">
+        <h6>Approved</h6>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="car" slot="start"></ion-icon>
+      <ion-label>
+        <h2>1 Aug 2018</h2>
+        <h4>RM500</h4>
+        <p>Petrol</p>
+      </ion-label>
+      <div item-content slot="end">
+        <h6>Pending</h6>
+      </div>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="pizza" slot="start"></ion-icon>
+      <ion-label>
+        <h2>10 Jun 2018</h2>
+        <h4>RM10</h4>
+        <p>Meal</p>
+      </ion-label>
+      <div item-content slot="end">
+        <h6>Rejected</h6>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
